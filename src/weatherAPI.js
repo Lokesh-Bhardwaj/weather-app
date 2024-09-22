@@ -5,7 +5,7 @@ import { locationNotFound } from "./catchErrors";
 function getCityCoordinates(cityName, country) {
   return new Promise((resolve, reject) => {
     fetch(
-      `https://api.openweathermap.org/geo/1.0/direct?q={${cityName}},{${country}}&appid=61430767d31aabc20e2aa324b62006a2`
+      `https://api.openweathermap.org/geo/1.0/direct?q={${cityName}},{${country}}&appid=api`
     )
       .then((response) => {
         if (response.status === 200) {
